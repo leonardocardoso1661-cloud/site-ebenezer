@@ -1321,7 +1321,7 @@ li {
     margin-bottom: 10px;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     /* Write the number of 
                               lines you want to be 
                               displayed */
