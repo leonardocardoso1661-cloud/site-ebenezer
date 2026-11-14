@@ -522,3 +522,90 @@ footer input {
     color: #1fc8b0 !important;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.45);
 }
+
+/* ===== Ajustes para celular ===== */
+@media (max-width: 767px) {
+
+    /* Campos com letra de 16px: o iPhone não dá zoom automático ao tocar no campo */
+    input,
+    textarea,
+    select,
+    .form-control {
+        font-size: 16px !important;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    .form-control {
+        min-height: 46px;
+    }
+
+    /* Botão "Inscrever-se" do rodapé: maior e mais fácil de tocar */
+    .bg-newsletter {
+        font-size: 13px !important;
+        min-height: 46px;
+        padding: 0 14px !important;
+    }
+
+    /* Banner principal mais alto e com texto legível */
+    .main-slider .tp-banner-container,
+    .main-slider .tp-banner,
+    .main-slider .tp-banner ul > li {
+        height: 380px !important;
+    }
+
+    .main-slider .tp-caption h2 {
+        font-size: 30px !important;
+        line-height: 1.15 !important;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .main-slider .tp-caption h3 {
+        font-size: 18px !important;
+        line-height: 1.3 !important;
+        white-space: normal !important;
+        text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+    }
+
+    /* Aviso de cookies compacto (ocupa menos da tela) */
+    .politica_cookies {
+        padding: 8px 12px;
+        font-size: 12px;
+        line-height: 1.35;
+        justify-content: space-between;
+    }
+
+    .politica_cookies span {
+        flex: 1;
+    }
+
+    button.btn-cookies {
+        margin-left: 10px;
+        flex-shrink: 0;
+    }
+
+    /* Botão do WhatsApp um pouco menor e acima do aviso de cookies */
+    .btn-whatsapp {
+        width: 56px;
+        height: 56px;
+        bottom: 84px;
+        right: 12px;
+    }
+
+    /* Seta de voltar ao topo mais fácil de tocar */
+    .scroll-to-top {
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+/* Bloco "Vantagens" da página inicial: tinha largura fixa de 373px e estourava a tela em celulares estreitos */
+@media (max-width: 767px) {
+    section#section-html-modulo_2 .finance-item {
+        width: 100% !important;
+        max-width: 373px;
+        margin: 0 auto;
+    }
+}
