@@ -165,7 +165,7 @@ $(document).ready(function() {
     $(document).on('click', '.btn-whatsapp', function() {
         // Número do WhatsApp (DDD + número, sem o 55). Edite aqui se precisar trocar.
         const numeroWhats = '51999483185';
-        const mensagem = 'Olá! Encontrei a empresa Ebenézer através do site oficial e gostaria de conversar sobre um possível projeto."';
+        const mensagem = 'Olá! Encontrei a empresa Ebenézer através do site oficial e gostaria de conversar sobre um possível projeto.';
         window.open('https://wa.me/55' + numeroWhats + '?text=' + encodeURIComponent(mensagem), '_blank');
     });
 
